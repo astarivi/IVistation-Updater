@@ -5,14 +5,12 @@ OUTPUT_DIR = build
 
 # NXDK
 NXDK_DIR ?= $(CURDIR)/../nxdk
-NXDK_CXX = y
 NXDK_SDL = y
 
 # Sources
 SRCS = $(CURDIR)/main.c \
 	$(CURDIR)/src/microtar.c \
 	$(CURDIR)/src/worker.c
-
 
 CXXFLAGS += -I$(CURDIR)/include
 CFLAGS += -I$(CURDIR)/include

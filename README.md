@@ -18,11 +18,14 @@ This approach can potentially offer recovery if an update fails (by replacing wi
 ## Contributions
 
 IVistation Updater aims to be a single `.xbe` file with no external file dependencies. Any changes fitting of this
-are welcome.
+approach are welcome.
 
 ## License
 
 [microtar](https://github.com/rxi/microtar), MIT License
+
 [Monserrat](https://fonts.google.com/specimen/Montserrat/about), OFL (Open Font License)
+
 [LithiumX](https://github.com/Ryzee119/LithiumX), MIT License, Distributed as binary
+
 [nxdk](https://github.com/XboxDev/nxdk), multiple licenses

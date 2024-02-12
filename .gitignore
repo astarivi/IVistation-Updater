@@ -1,4 +1,5 @@
 update.tar
+*.iso
 build/
 
 # Prerequisites

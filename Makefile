@@ -1,5 +1,6 @@
 # XBE
 XBE_TITLE = IVistation-Updater
+XBE_VERSION = 1
 GEN_XISO = $(XBE_TITLE).iso
 OUTPUT_DIR = build
 
@@ -15,10 +16,16 @@ SRCS = $(CURDIR)/main.c \
 CXXFLAGS += -I$(CURDIR)/include
 CFLAGS += -I$(CURDIR)/include
 
-all_local: cp_rom all
+all_local: cp_rom all release_v
 
 include $(NXDK_DIR)/Makefile
 
 cp_rom:
 	@mkdir -p $(OUTPUT_DIR)
 	cp update.tar $(OUTPUT_DIR)/
+
+release_v:
+	@rm -rf release
+	@mkdir -p release
+	cp build/default.xbe release/update.xbe
+	python release.py $(XBE_VERSION)
